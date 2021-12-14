@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { getFood } from './fetch-utils.js';
+import { getPet } from './fetch-utils.js';
 // let state
 
 // set event listeners 
@@ -7,4 +7,4 @@ import { getFood } from './fetch-utils.js';
   // use user input to update state 
   // update DOM to reflect the new state
 
-getFood();
+getPet();

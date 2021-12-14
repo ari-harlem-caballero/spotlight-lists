@@ -6,9 +6,9 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsI
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 
-export async function getFood() {
+export async function getPet() {
     const response = await client
-        .from('food')
+        .from('pets')
         .select();
 
     console.log(response.data);
