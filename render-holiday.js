@@ -12,13 +12,13 @@ export function renderHolidays(holiday) {
     holidayName.textContent = holiday.name;
 
     holidaySeason.classList.add('holiday-season');
-    holidaySeason.textContent = holiday.season;
+    holidaySeason.textContent = `Season: ${holiday.season}`;
 
     holidayLength.classList.add('holiday-length');
-    holidayLength.textContent = holiday.days;
+    holidayLength.textContent = `Length: ${holiday.days} days long`;
 
     holidayGift.classList.add('holiday-gift');
-    holidayGift.textContent = holiday.gifts;
+    holidayGift.textContent = `Gifts given: ${holiday.gifts}`;
 
     holidayDiv.append(holidayImg, holidayName, holidaySeason, holidayLength, holidayGift);
 
