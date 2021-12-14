@@ -1,10 +1,20 @@
 // import functions and grab DOM elements
-import { getPet } from './fetch-utils.js';
+import { getPets } from './fetch-utils.js';
+import { renderPets } from './render-pet.js';
 // let state
-
+const petContainer = document.querySelector('#pet-container');
 // set event listeners 
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+window.addEventListener('load', async() => {
+    const pets = await getPets();
 
-getPet();
+    for (let pet of pets) {
+        const petEl = renderPets(pet);
+
+        petContainer.append(petEl);
+    }
+});
+
+getPets();

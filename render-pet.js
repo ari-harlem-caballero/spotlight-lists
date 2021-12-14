@@ -1,4 +1,4 @@
-export function renderFood() {
+export function renderPets(pet) {
     const petDiv = document.createElement('div');
     const petRank = document.createElement('p');
     const petName = document.createElement('p');
@@ -12,8 +12,8 @@ export function renderFood() {
 
     petInfo.classList.add('pet-info');
     petInfo.textContent = `is a ${pet.color} ${pet.type}`;
-    petImg.src = `./assets/${pet.name}.jpeg`;
 
+    petImg.src = `./assets/${pet.name}.jpg`;
 
     petDiv.append(petRank, petImg, petName, petInfo);
 
