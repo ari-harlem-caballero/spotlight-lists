@@ -13,3 +13,11 @@ export async function getPets() {
 
     return response.data;
 }
+
+export async function getHolidays() {
+    const response = await client
+        .from('holiday')
+        .select();
+
+    return response.data;
+}

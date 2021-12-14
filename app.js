@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
-import { getPets } from './fetch-utils.js';
+import { getPets, getHolidays } from './fetch-utils.js';
 import { renderPets } from './render-pet.js';
+import { renderHolidays } from './render-holiday.js';
 // let state
 const petContainer = document.querySelector('#pet-container');
 // set event listeners 
@@ -17,4 +18,4 @@ window.addEventListener('load', async() => {
     }
 });
 
-getPets();
+getHolidays();

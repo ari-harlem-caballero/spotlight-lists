@@ -7,6 +7,9 @@ export function renderPets(pet) {
 
     petDiv.classList.add('pet-hold');
 
+    petRank.classList.add('rank');
+    petRank.textContent = `Ranking: ${pet.rank}`;
+
     petName.classList.add('name');
     petName.textContent = pet.name;
 
