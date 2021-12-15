@@ -2,9 +2,11 @@
 import { getPets, getHolidays, getFood } from './fetch-utils.js';
 import { renderPets } from './render-pet.js';
 import { renderHolidays } from './render-holiday.js';
+import { renderFoods } from './render-food.js';
 // let state
 const petContainer = document.querySelector('#pet-container');
 const holidayContainer = document.querySelector('#holiday-container');
+const foodContainer = document.querySelector('#food-container');
 // set event listeners 
   // get user input
   // use user input to update state 
@@ -29,4 +31,12 @@ window.addEventListener('load', async() => {
     }
 });
 
-getFood();
+window.addEventListener('load', async() => {
+    const foods = await getFood();
+
+    for (let food of foods) {
+        const foodEl = renderFoods(food);
+
+        foodContainer.append(foodEl);
+    }
+});
