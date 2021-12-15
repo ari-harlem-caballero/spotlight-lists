@@ -5,31 +5,35 @@
 body, html {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 100%;
-    margin: 0;
+    overflow: auto;
+    /* margin: 0; */
 }
 
 .lists {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0 40px 0;
+    flex-wrap: wrap;
 }
 
 #pet-container {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pet-hold {
     margin: 5px 10px 5px 10px;
+    padding: 0 20px 0 20px;
 }
 .pet-hold img {
     width: 200px;
@@ -37,4 +41,35 @@ body, html {
 
 .pet-hold .name {
     font-weight: bolder;
+}
+
+#holiday-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.holiday-hold {
+    margin: 0 40px 0 40px;
+    padding: 5px 20px 5px 20px;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.holiday-hold img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.holiday-hold p {
+    margin: 10px 0 0 0;
+}
+
+.holiday-name {
+    margin: 10px 0 5px 0;
 }

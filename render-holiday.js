@@ -1,6 +1,6 @@
 export function renderHolidays(holiday) {
     const holidayDiv = document.createElement('div');
-    const holidayName = document.createElement('p');
+    const holidayName = document.createElement('h3');
     const holidaySeason = document.createElement('p');
     const holidayLength = document.createElement('p');
     const holidayGift = document.createElement('p');
@@ -19,6 +19,8 @@ export function renderHolidays(holiday) {
 
     holidayGift.classList.add('holiday-gift');
     holidayGift.textContent = `Gifts given: ${holiday.gifts}`;
+
+    holidayImg.src = `./assets/${holiday.name}.jpg`;
 
     holidayDiv.append(holidayImg, holidayName, holidaySeason, holidayLength, holidayGift);
 
