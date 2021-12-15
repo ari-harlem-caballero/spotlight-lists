@@ -73,3 +73,48 @@ body, html {
 .holiday-name {
     margin: 10px 0 5px 0;
 }
+
+#food-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-hold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.name-hold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; 
+    margin-bottom: 10px;
+}
+
+.food-name {
+    font-weight: bolder;
+}
+
+.food-name, .food-type {
+    margin: 0;
+}
+
+.food-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.food-info p {
+    padding: 5px;
+    margin: 0;
+}

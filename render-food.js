@@ -1,5 +1,6 @@
 export function renderFoods(food) {
     const foodDiv = document.createElement('div');
+    const nameDiv = document.createElement('div');
     const foodName = document.createElement('p');
     const foodType = document.createElement('p');
     const foodPrep = document.createElement('p');
@@ -7,6 +8,7 @@ export function renderFoods(food) {
     const foodInfo = document.createElement('div');
 
     foodDiv.classList.add('food-hold');
+    nameDiv.classList.add('name-hold');
 
     foodName.classList.add('food-name');
     foodName.textContent = food.name;
@@ -14,11 +16,13 @@ export function renderFoods(food) {
     foodType.classList.add('food-type');
     foodType.textContent = food.type;
 
-    foodInfo.classList.add('info');
-    foodInfo.textContent = `Total prep: ${food.prep_time}, Serve hot: ${food.serve_hot}`;
+    foodInfo.classList.add('food-info');
+    foodPrep.textContent = `Total prep (min): ${food.prep_time}`;
+    foodHeat.textContent = `Serve hot: ${food.serve_hot}`;
 
+    nameDiv.append(foodName, foodType);
     foodInfo.append(foodPrep, foodHeat);
-    foodDiv.append(foodName, foodType, foodInfo);
+    foodDiv.append(nameDiv, foodInfo);
 
     return foodDiv;
 }
