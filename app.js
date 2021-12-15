@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { getPets, getHolidays } from './fetch-utils.js';
+import { getPets, getHolidays, getFood } from './fetch-utils.js';
 import { renderPets } from './render-pet.js';
 import { renderHolidays } from './render-holiday.js';
 // let state
@@ -29,4 +29,4 @@ window.addEventListener('load', async() => {
     }
 });
 
-getHolidays();
+getFood();

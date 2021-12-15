@@ -21,3 +21,11 @@ export async function getHolidays() {
 
     return response.data;
 }
+
+export async function getFood() {
+    const response = await client
+        .from('food')
+        .select();
+
+    return response.data;
+}
