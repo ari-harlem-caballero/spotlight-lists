@@ -118,3 +118,27 @@ body, html {
     padding: 5px;
     margin: 0;
 }
+
+
+.bob-hold p {
+    margin: 0;
+    padding: 5px;
+}
+
+.bob-title {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.title-hold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 5px 0;
+}
+
+
+.bob-holiday {
+    font-weight: bold;
+}

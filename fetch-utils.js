@@ -29,3 +29,11 @@ export async function getFood() {
 
     return response.data;
 }
+
+export async function getBobs() {
+    const response = await client
+        .from('bob')
+        .select();
+
+    return response.data;
+}
