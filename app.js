@@ -3,7 +3,7 @@ import { getPets, getHolidays, getFood, getBobs } from './fetch-utils.js';
 import { renderPets } from './render-pet.js';
 import { renderHolidays } from './render-holiday.js';
 import { renderFoods } from './render-food.js';
-import { renderBobs } from './render-bob.js'
+import { renderBobs } from './render-bob.js';
  // let state
 const petContainer = document.querySelector('#pet-container');
 const holidayContainer = document.querySelector('#holiday-container');
